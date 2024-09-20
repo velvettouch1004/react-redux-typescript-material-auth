@@ -21,7 +21,7 @@ export default function Header() {
   };
   useEffect(() => {
     api.autoSignIn().then((user) => {
-      dispatch({ type: SET_AUTH, data: user.data });
+      // dispatch({ type: SET_AUTH, data: user.data });
     });
   }, [dispatch]);
 
